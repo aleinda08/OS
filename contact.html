@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+	<!-- inicia nav -->
+		<nav>
+			<a href="index.html">
+				<img src="img/logo.png" alt="OS Language Services Logo">
+			</a>
+
+			<ol>
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+
+				<li>
+					<a href="about.html">About</a>
+				</li>
+
+				<li>
+					<a href="services.html">Services</a>
+				</li>
+
+				<li>
+					<a href="resources.html">Resources</a>
+				</li>
+
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+	
+			</ol>
+		</nav>
+	<!-- ends nav -->
+		<img src="img/header.jpg" alt="Certified Translation and interpreting services">
+		<h1>Contact</h1>
+	</header>
+
+	<!-- inicia contenido principal -->
+	<main>
+		<section>
+			<div>
+				<h2>How can we help you?</h2>
+				<form action="envio.php" method="post" id="contact">
+					<fieldset>
+						<legend>Contact information</legend>
+						<label for="nombre">Name</label>
+						<input type="text" placeholder="Enter name" name="nombre" id="nombre"> <br>
+						<label for="email">Email</label>
+						<input type="email" placeholder="Enter email" name="email" id="email">
+						<label for="email">Phone</label>
+						<input type="text" placeholder="Enter phone number" name="phone" id="phone">
+					</fieldset>
+
+					<fieldset>
+					<legend>Select your service</legend>
+					<select name="service" id="services"> 
+						<option value="Translation">Translation</option>
+						<option value="Interpreting">Interpreting</option>
+						<option value="Other">Other</option>
+					</select>
+			
+					</fieldset>
+					<br>					
+					<fieldset>
+						<legend>Suscribe to our newsletter</legend>
+						<label for="suscribe">Suscribe</label>
+						<input type="checkbox" value="suscribe" id="suscribe" name="suscribe">
+					</fieldset>
+					
+					<br>
+					<label for="mensaje">Leave a message</label><br>
+					<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+					<br>
+					<input type="submit" value="Send">
+					<input type="reset" value="Cancel">
+					<input type="button" value="Nothing">
+				
+				</form>
+			</div>
+		<!-- ends form-->
+	<!-- cierra main-->
+
+	<footer>
+		<h3>Follow us</h3>
+		<a href="https://facebook.com" target="_blank">
+			<img src="img/facebook.png" alt="Follow us in Facebook">
+		</a>
+		<a href="https://twitter.com" target="_blank">
+			<img src="img/twitter.png" alt="Follow us in Twitter">
+		</a>
+	</footer>
+
+</body>
+</html>
